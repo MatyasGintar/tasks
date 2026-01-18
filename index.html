@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seznam úkolů (s pamětí)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Úkoly</h1>
+
+  <form id="taskForm">
+    <input id="taskInput" type="text" placeholder="Napiš nový úkol…" autocomplete="off" />
+    <button id="addBtn" type="submit" disabled>Přidat</button>
+  </form>
+
+  <ul id="taskList"></ul>
+
+  <div style="display:flex; gap:8px; margin-top:12px;">
+    <button id="clearDoneBtn" type="button">Smazat hotové</button>
+    <button id="clearAllBtn" type="button">Smazat vše</button>
+  </div>
+</body>
+</html>
